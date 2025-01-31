@@ -1,0 +1,3 @@
+The formula
+ A(x:int)
+is not closed: free variables are x:int

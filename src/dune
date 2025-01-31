@@ -1,0 +1,11 @@
+(ocamllex
+ (modules other_lexer formula_lexer))
+
+(menhir
+ (modules formula_parser)
+ (explain true))
+
+(library
+ (name enfpal_lib)
+ (libraries MFOTL_lib core_kernel base zarith unix pyml calendar str)
+ (preprocess (pps ppx_jane)))

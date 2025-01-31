@@ -1,0 +1,18 @@
+The formula
+ □[0s,∞) (∀y:int. ∀z:int. (z:int <- SUM(x:int; y:int; ⧫[0s,∞) B(x:int) ∧ A(y:int))) → C(y:int, z:int))
+is enforceable and types to
+ □[0s,∞) ((∀y:int. (∀z:int. ((z:int <- SUM(x:int; y:int; ⧫[0s,∞) A(y:int) ∧ B(x:int))) →:R (C(y:int, z:int) : Cau) : Cau) : Cau)) : Cau) : Cau
+[Enforcer] @1 reactively commands:
+Cause:
+C(3, 3)
+OK.
+[Enforcer] @1 nothing to do proactively.
+[Enforcer] @2 reactively commands:
+Cause:
+C(3, 3), C(4, 5)
+OK.
+[Enforcer] @2 nothing to do proactively.
+[Enforcer] @3 reactively commands:
+Cause:
+C(3, 3), C(4, 5), C(8, 4)
+OK.

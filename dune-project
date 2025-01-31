@@ -1,0 +1,31 @@
+(lang dune 3.13)
+
+(name enfpal)
+
+(generate_opam_files true)
+
+(source
+ (github runtime-enforcement/enfpal))
+
+(license LICENSE)
+
+(documentation https://url/to/documentation)
+
+(using menhir 3.0)
+
+(package
+ (name enfpal)
+ (synopsis "")
+ (description "")
+ (depends
+  (ocaml (>= 4.11))
+  (dune (>= 3.0))
+  (core_kernel (>= v0.14))
+  (base (>= v0.14))
+  (menhir (>= 20220210))
+  (zarith (>= 1.11))
+  (zarith_stubs_js (>= v0.14.1)))
+ (tags
+  (proactive runtime enforcement)))
+
+; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project
